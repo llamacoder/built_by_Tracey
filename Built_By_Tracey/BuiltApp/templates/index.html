@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Built By Tracey</title>
+</head>
+<body>
+  <h1>Tracey's Portfolio</h1>
+  {% for project in projects %}
+
+  <img src="{{project.splashImg}}" alt="xxx">
+  <p>{{project.title}}</p>
+  <p>{{project.type}}</p>
+  <p>{{project.skills}}</p>
+
+  {% endfor %}
+</body>
+</html>

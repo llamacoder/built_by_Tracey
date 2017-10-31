@@ -125,4 +125,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     BASE_DIR + '/BuiltApp/static',
 )
-STATICFILES_STORAGE - 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'

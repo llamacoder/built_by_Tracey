@@ -1,20 +1,67 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
+
+  <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <!-- Import fancybox -->
+  <link rel="stylesheet" href="{% static 'jquery.fancybox.css' %}"> </link>
+  <!-- Import local styles -->
+  <link rel="stylesheet" href="{% static 'built-app.css' %}"></link>
+
+
   <title>Built By Tracey</title>
 </head>
 <body>
-  <h1>Tracey's Portfolio</h1>
-  {% for project in projects %}
+  <h1>Built By Tracey</h1>
 
-  <img src="{{project.splashImg}}" alt="xxx">
-  <p>{{project.title}}</p>
-  <p>{{project.type}}</p>
-  <p>{{project.skills}}</p>
+  <div class="container">
+    <div class="row">
+      <div class="hdr">
+        <img class="responsive-img" src="./images/BoomtownHeaderImage.png">
+      </div>
+    </div>
+    <div class="row project-row">
+      {% for project in projects %}
 
-  {% endfor %}
+      <div id="project" class="col card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="z-depth-2"
+              src='{{project.splashImg}}'/>
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">{{project.title}}<i class="material-icons right">more_vert</i></span>
+            <p><a href="{{project.link}}">Visit Project</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">{{project.title}}<i class="material-icons right">close</i></span>
+            <p>{{project.skills}}</p>
+          </div>
+        </div>
+
+
+
+      {% endfor %}
+    </div>
+  </div>
+
+  <div style="display: none;" id="detail-panel">
+  </div>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="{% static 'jquery.fancybox.js' %}"></script>
+  <script type="text/javascript" src="{% static 'built-app.js' %}"></script>
+
 </body>
 </html>

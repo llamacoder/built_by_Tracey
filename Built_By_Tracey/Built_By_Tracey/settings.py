@@ -25,7 +25,9 @@ SECRET_KEY = 'r-kj&mpake(9t#!p!=^b_zaws_c1b+-4fesu#t)e#vr73(bd%n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    gruesome-broomstick-24718.herokuapp.com
+]
 
 
 # Application definition

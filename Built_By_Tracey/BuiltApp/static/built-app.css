@@ -53,8 +53,27 @@ body {
 	font-size: 16px;
 }
 
+.container {
+	background-color: white;
+
+}
+.hdr {
+	width: 100%;
+	margin: auto;
+	margin-bottom:0;
+}
+
+.badges {
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left:10px;
+	margin-right:20px;
+	font-family: sans-serif;
+}
+
 .card .card-content .card-title  {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: bold;
 	line-height: 20px;
 }
@@ -76,6 +95,7 @@ div .web-bar {
 }
 div .brief-desc {
 	height: 20%;
+	font-size: 12px;
 	padding: 24px;
 }
 .bottom i {
@@ -88,11 +108,35 @@ div .brief-desc {
 	font-family: sans-serif;
 	padding:0;
 	margin-left:10px;
-	width:30%;
+	width:31%;
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+
+.badge {
+	margin:auto;
+	font-family: sans-serif;
+	padding:0;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left:10px;
+	width:31%;
 	margin-top: 10px;
 }
 
+.badge p {
+	padding: 10px;
+}
+
+.container .row {
+	margin:0;
+}
+
 @media screen and (max-width: 800px) {
+	.badge {
+		width: 47%;
+	}
+
 	#project {
 		width: 47%;
 	}
@@ -100,5 +144,9 @@ div .brief-desc {
 	#project {
 		width: 100%;
 		margin-left:0;
+	}
+	.badge {
+		width: 100%;
+		margin-left: 0;
 	}
 }

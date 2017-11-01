@@ -22,21 +22,34 @@
   <title>Built By Tracey</title>
 </head>
 <body>
-  <h1>Built By Tracey</h1>
-
   <div class="container">
     <div class="row">
-      <div class="hdr">
-        <img class="responsive-img" src="./images/BoomtownHeaderImage.png">
+      <div>
+        <img class="hdr responsive-img" src="{% static './images/TraceyMade.png' %}">
       </div>
     </div>
-    <div class="row project-row">
+    <div class="badges row center">
+      <div class="badge col l4 m6 s12">
+        <img src="{% static './images/GalvanizeBadge.png' %}" alt="">
+        <p>These are projects I developed during my web development immersive at Galvanize in Boulder.</p>
+      </div>
+      <div class="badge col l4 m6 s12">
+        <img src="{% static './images/BFSbadge.png' %}" alt="">
+        <p>These are projects I developed as owner/artist at Broken Fence Studios.</p>
+      </div>
+      <div class="badge col l4 m6 s12">
+        <img src="{% static './images/VolunteerBadge.png' %}" alt="">
+        <p>These are volunteer projects I developed for various charitable causes or small business that needed help.</p>
+      </div>
+
+    </div>
+    <div class="row project-row center">
       {% for project in projects %}
 
       <div id="project" class="col card ">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="z-depth-2"
-              src='{{project.splashImg}}'/>
+              src="/static/{{project.splashImg}}"/>
           </div>
           <div class="card-content">
             <span class="card-title test grey-text text-darken-4">{{project.title}}</span>

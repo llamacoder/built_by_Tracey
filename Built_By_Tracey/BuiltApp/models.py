@@ -10,6 +10,7 @@ class Project(models.Model):
     link = models.URLField(max_length=50)
     skills = models.TextField()
     notes = models.TextField()
+    orderID = models.IntegerField()
 
     def __str__(self):
         return self.title

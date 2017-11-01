@@ -111,6 +111,7 @@ div .brief-desc {
 	width:31%;
 	margin-top: 10px;
 	margin-bottom:10px;
+	height:300px;
 }
 
 .badge {
@@ -130,6 +131,20 @@ div .brief-desc {
 
 .container .row {
 	margin:0;
+}
+
+.project-reveal {
+	text-align: center;
+}
+.card .card-reveal .card-title {
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.project-reveal p {
+	font-size: 14px;
+	margin-top: 10px;
 }
 
 @media screen and (max-width: 800px) {

@@ -39,7 +39,7 @@
       </div>
       <div class="badge col l4 m6 s12">
         <img src="{% static './images/VolunteerBadge.png' %}" alt="">
-        <p>These are volunteer projects I developed for various charitable causes or small business that needed help.</p>
+        <p>These are volunteer projects I developed for various charitable causes or small businesses that needed help.</p>
       </div>
 
     </div>
@@ -55,12 +55,12 @@
             <span class="card-title test grey-text text-darken-4">{{project.title}}</span>
           </div>
           <div class="brief-desc">
-            <p>Materialize, HTML, CSS</p>
-          </div>
-          <div class="web-bar"><p class="bottom activator"><a href="{{project.link}}">Visit Project</a><i class="material-icons right">more_vert</i></p></div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">{{project.title}}<i class="material-icons right">close</i></span>
             <p>{{project.skills}}</p>
+          </div>
+          <div class="web-bar"><p class="bottom activator"><a href="{{project.link}}" target="blank_">Visit Project</a><i class="material-icons right">more_vert</i></p></div>
+          <div class="project-reveal card-reveal">
+            <span class="card-title grey-text text-darken-4">{{project.title}}<i class="material-icons right">close</i></span>
+            <p>{{project.notes}}</p>
           </div>
         </div>
 

@@ -53,12 +53,41 @@ body {
 	font-size: 16px;
 }
 
+.card .card-content .card-title  {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.card-content {
+	height: 50px;
+}
+div .bottom {
+	height: 25px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	line-height: 24px;
+}
+
+div .web-bar {
+	height: 15%;
+	padding: 24px;
+}
+div .brief-desc {
+	height: 20%;
+	padding: 24px;
+}
+.bottom i {
+	float: right;
+	margin-right: 30px;
+}
 
 #project {
 	margin:auto;
 	font-family: sans-serif;
 	padding:0;
-	margin-left:20px;
+	margin-left:10px;
 	width:30%;
 	margin-top: 10px;
 }
